@@ -2,7 +2,8 @@
 import axios from "axios";
 import { AuthResponse } from "../models/response/AuthResponse";
 
-export const API_URL = 'http://localhost:5000/api'
+// export const API_URL = 'http://localhost:5000/api'
+export const API_URL = 'https://jwt-authorization-server.vercel.app/api'
 
 const $api = axios.create({ // создадим instance axios назавем его $api в начале переменных будем ставить $
     withCredentials: true, // для того что бы к каждому запросу куки цеплялись автоматически
